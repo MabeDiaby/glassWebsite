@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #cecece;
+    height: 100vh;
+    background-color: rgb(1, 31, 43);
+    padding: 40px 0;
+}
+
+.glassContainer {
+    width: 90%;
+    margin: 0 auto;
+    /* height: calc(100vh - 80px); */
+    height: 750px;
+    background-color: rgba(31, 60, 70, .6);
+    border-radius: 20px;
+    position: relative;
+    z-index: 4;
+    backdrop-filter: blur(20px);
+}
+
+#grids {
+    z-index: -32;
+}
+
+.bgOne,
+.bgTwo {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(112deg, rgba(169, 28, 115, 1) 21%, rgb(241, 92, 11) 93%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.bgOne {
+    top: 7%;
+    left: 5.5%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bgTwo {
+    bottom: 7%;
+    right: 5.5%;
+}
